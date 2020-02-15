@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/singUp_Activity_password_text"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/singUp_Activity_signIn_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singUp_Activity_name_text" />
+
+    <EditText
+        android:id="@+id/singUp_Activity_name_text"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/singUp_Activity_password_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/singUp_Activity_signUp_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="signUp"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="@+id/singUp_Activity_signIn_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/singUp_Activity_signIn_Button"
+        app:layout_constraintTop_toTopOf="@+id/singUp_Activity_signIn_Button" />
+
+    <Button
+        android:id="@+id/singUp_Activity_signIn_Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="signIn"
+        android:text="Sign In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/singUp_Activity_signUp_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singUp_Activity_password_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
